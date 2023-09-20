@@ -313,7 +313,8 @@ body {
   padding-top: 15px;
 }
 .events-grid-box {
-  width: 260px;
+                                              /* отступ справа  */
+  /* width: 260px; */
   padding: 30px 0px 0px 30px;
 }
 .schedule__grid {
@@ -443,7 +444,8 @@ input[type="email"] {
   box-sizing: border-box;
 }
 input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 label {
   font-size: 11px;
