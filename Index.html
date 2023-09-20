@@ -61,7 +61,8 @@
                 </p>
                 <a href="#" class="banner-button">узнать подробнее</a>
               </div>
-              <img src="./images/logo/arrow.svg" alt="arrow" class="banner-arrow">
+              <a href="#schedule__grid"><img src="./images/logo/arrow.svg" alt="arrow" class="banner-arrow">
+              </a>
             </div>
             <div class="visual">
               <div class="banner-rectangle"></div>
@@ -305,6 +306,25 @@
         function closeModal() {
             document.getElementById("modal").style.top = "-600px";
         }
+
+
+        // Smooth Scroll
+      
+        const links = document.querySelectorAll(".banner-link");
+
+        for (const link of links) {
+        link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+
+        document.querySelector(href).scrollIntoView({
+        behavior: "smooth"
+        });
+        }
+        
       </script>
     </main>
   </body>
